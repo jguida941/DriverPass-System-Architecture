@@ -1,13 +1,48 @@
-# DriverPass System Architecture Specification
+# DriverPass System Architecture Documentation  
+[![Docs Status](https://img.shields.io/badge/docs-complete-brightgreen.svg)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
+[![GitHub last commit](https://img.shields.io/github/last-commit/jguida941/CS-255-Project-One)]()
+
 **Course:** CS 255 - Systems Analysis & Design  
 **Author:** Justin Paul Guida  
 **Date:** August 2025  
+
+**A complete architectural and modeling documentation suite for a DMV driver training platform**
+
+**Includes functional requirements, process/object models, security flowcharts, scaling architecture, and compliance planning.**
+
+**Designed as a professional-grade reference architecture.**
+
+---
+
+## Table of Contents
+
+- [1. Executive Summary](#1-executive-summary)
+- [2. Project Structure](#2-project-structure)
+- [3. System Architecture Overview](#3-system-architecture-overview)
+- [4. Detailed System Flows](#4-detailed-system-flows)
+- [5. Security Architecture](#5-security-architecture)
+- [6. Performance & Scaling Strategy](#6-performance--scaling-strategy)
+- [7. Database Schema](#7-database-schema-simplified)
+- [8. Implementation Roadmap](#8-implementation-roadmap)
+- [9. File Documentation](#9-file-documentation)
+- [10. Design Principles](#10-design-principles)
+- [11. Technologies & Tools](#11-technologies--tools)
+- [12. Production Considerations](#12-production-considerations)
+- [13. Future Enhancements](#13-future-enhancements)
 
 ---
 
 ## 1. Executive Summary
 
 DriverPass is a cloud-native platform addressing the critical 65% DMV test failure rate through integrated online testing and on-road training. This repository contains the complete system design, from business requirements through architectural implementation, demonstrating production-ready patterns for a 10K+ concurrent user system.
+
+### Key Features
+- **Integrated Training**: Online practice tests + on-road instruction
+- **Multi-Role Platform**: Customer, Secretary, Instructor, Admin interfaces
+- **Real-Time Scheduling**: Conflict-free appointment booking with <100ms response
+- **DMV Compliance**: Automated daily synchronization with regulations
+- **Enterprise Security**: JWT auth, TLS 1.3, tokenized payments
 
 ---
 
@@ -163,7 +198,7 @@ Daily Cron Trigger (2-3 AM with jitter)
            ▼
 ┌─────────────────────┐
 │ Update database     │
-│ Notify affected users│
+│ Notify affected users
 │ Log sync results    │
 └─────────────────────┘
 ```
@@ -407,4 +442,23 @@ The architecture supports 1M+ daily transactions while maintaining sub-100ms res
 
 ---
 
+## Repository Information
+
+### Technologies
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+
+### Topics
+`system-architecture` `jwt-auth` `postgresql` `redis` `microservices` `dmv-scheduling` `cs255` `cloud-native` `docker` `kubernetes`
+
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
 **© 2025 Justin Paul Guida - System Architecture**
+
+*For questions or collaboration, contact via GitHub or LinkedIn*
