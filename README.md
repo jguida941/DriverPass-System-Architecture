@@ -1,7 +1,7 @@
 # DriverPass System Architecture Documentation  
-[![Docs Status](https://img.shields.io/badge/docs-complete-brightgreen.svg)](https://github.com/jguida941/CS-255-Project-One)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jguida941/CS-255-Project-One/blob/master/LICENSE)
-[![Project Status](https://img.shields.io/badge/status-complete-success.svg)](https://github.com/jguida941/CS-255-Project-One)
+[![Course](https://img.shields.io/badge/CS%20255-Systems%20Analysis-blue.svg)](https://github.com/jguida941/CS-255-Project-One)
+[![License](https://img.shields.io/badge/license-CC--BY--NC--SA-green.svg)](https://github.com/jguida941/CS-255-Project-One/blob/master/LICENSE)
+[![Gantt Chart](https://img.shields.io/badge/gantt-interactive-orange.svg)](https://github.com/jguida941/CS-255-Project-One/tree/master/gantchart_generator)
 
 **Course:** CS 255 - Systems Analysis & Design  
 **Author:** Justin Paul Guida  
@@ -530,7 +530,7 @@ The architecture supports 1M+ daily transactions while maintaining sub-100ms res
 `system-architecture` `jwt-auth` `postgresql` `redis` `microservices` `dmv-scheduling` `cs255` `cloud-native` `docker` `kubernetes`
 
 ### License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License - see the LICENSE file for details. This prevents commercial use while allowing academic and educational use.
 
 ---
 
