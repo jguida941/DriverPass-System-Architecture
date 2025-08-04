@@ -520,14 +520,14 @@ The architecture supports 1M+ daily transactions while maintaining sub-100ms res
 ## Repository Information
 
 ### Technologies
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)](https://redis.io/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
+[![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)](https://jwt.io/)
+[![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)](https://reactjs.org/)
 
 ### Topics
-`system-architecture` `jwt-auth` `postgresql` `redis` `microservices` `dmv-scheduling` `cs255` `cloud-native` `docker` `kubernetes`
+[`system-architecture`](https://github.com/topics/system-architecture) [`jwt-auth`](https://github.com/topics/jwt-auth) [`postgresql`](https://github.com/topics/postgresql) [`redis`](https://github.com/topics/redis) [`microservices`](https://github.com/topics/microservices) [`dmv-scheduling`](https://github.com/topics/dmv-scheduling) [`cs255`](https://github.com/topics/cs255) [`cloud-native`](https://github.com/topics/cloud-native) [`docker`](https://github.com/topics/docker) [`kubernetes`](https://github.com/topics/kubernetes)
 
 ### License
 This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License - see the LICENSE file for details. This prevents commercial use while allowing academic and educational use.
