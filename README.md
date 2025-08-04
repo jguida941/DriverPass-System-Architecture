@@ -72,6 +72,10 @@ CS-255-Project-One/
 │   ├── gantt_chart_original.py  # Python script for generating timeline
 │   └── gantt_chart_final.html  # Interactive HTML output with PDF export
 │
+├── images/                      # Screenshots and visual assets
+│   ├── gantt-timeline.png       # Gantt chart timeline view
+│   └── task-details.png         # Task breakdown view
+│
 └── submission/                  # Final deliverables
     ├── DriverPass_Requirements.md  # Production-ready requirements
     ├── DriverPass_Modeling_Paper.md # Architectural modeling analysis
@@ -430,6 +434,14 @@ Role Hierarchy:
 
 ### Overview
 The `gantchart_generator` directory contains a Python-based tool for creating professional project timeline visualizations based on the DriverPass interview transcript schedule.
+
+### Sample Output
+
+**Interactive Timeline View:**
+![DriverPass Gantt Chart Timeline](images/gantt-timeline.png)
+
+**Detailed Task Breakdown:**
+![Task Details View](images/task-details.png)
 
 ### Features
 - **Interactive HTML Chart**: Professional timeline with hover tooltips
