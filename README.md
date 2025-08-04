@@ -1,7 +1,7 @@
 # DriverPass System Architecture Documentation  
-[![Docs Status](https://img.shields.io/badge/docs-complete-brightgreen.svg)]()
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
-[![GitHub last commit](https://img.shields.io/github/last-commit/jguida941/CS-255-Project-One/master)]()
+[![Docs Status](https://img.shields.io/badge/docs-complete-brightgreen.svg)](https://github.com/jguida941/CS-255-Project-One)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jguida941/CS-255-Project-One/blob/master/LICENSE)
+[![Project Status](https://img.shields.io/badge/status-complete-success.svg)](https://github.com/jguida941/CS-255-Project-One)
 
 **Course:** CS 255 - Systems Analysis & Design  
 **Author:** Justin Paul Guida  
