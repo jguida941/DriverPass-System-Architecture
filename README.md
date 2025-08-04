@@ -29,7 +29,8 @@
 - [10. Design Principles](#10-design-principles)
 - [11. Technologies & Tools](#11-technologies--tools)
 - [12. Production Considerations](#12-production-considerations)
-- [13. Future Enhancements](#13-future-enhancements)
+- [13. Gantt Chart Generator](#13-gantt-chart-generator)
+- [14. Future Enhancements](#14-future-enhancements)
 
 ---
 
@@ -51,7 +52,8 @@ DriverPass is a cloud-native platform addressing the critical 65% DMV test failu
 ```
 CS-255-Project-One/
 ├── README.md                    # This comprehensive guide
-├── .gitignore                   # Excludes CLAUDE.md, Ideas.md
+├── LICENSE                      # MIT License
+├── .gitignore                   # Excludes CLAUDE.md, Ideas.md, generated files
 ├── business_requirements.md     # Technical specifications (architect version)
 ├── model_application_short_paper.md # Modeling analysis (architect version)
 │
@@ -64,6 +66,11 @@ CS-255-Project-One/
 ├── docs/                        # Extended academic versions
 │   ├── DriverPass_Business_Requirements.docx.md    # Student-friendly expanded version
 │   └── DriverPass_Model_Application_Short_Paper.docx.md # Academic paper format
+│
+├── gantchart_generator/         # Gantt chart visualization tool
+│   ├── gantt_chart_original.py  # Python script for generating timeline
+│   ├── requirements.txt         # Python dependencies
+│   └── gantt_chart_final.html  # Interactive HTML output with PDF export
 │
 └── submission/                  # Final deliverables
     ├── DriverPass_Requirements.md  # Production-ready requirements
@@ -419,7 +426,74 @@ Role Hierarchy:
 
 ---
 
-## 13. Future Enhancements
+## 13. Gantt Chart Generator
+
+### Overview
+The `gantchart_generator` directory contains a Python-based tool for creating professional project timeline visualizations based on the DriverPass interview transcript schedule.
+
+### Features
+- **Interactive HTML Chart**: Professional timeline with hover tooltips
+- **PDF Export**: Built-in export functionality - no external tools needed
+- **Color-Coded Phases**: Distinct colors for each project phase
+  - Planning: Red
+  - Design: Teal
+  - Approval: Yellow
+  - Development: Orange
+  - Testing: Light Green
+  - Deployment: Light Purple
+- **Milestone Markers**: Customer Approval and Project Complete milestones
+- **Progress Tracking**: Visual progress indicators for each task
+
+### Quick Start
+```bash
+# Navigate to generator directory
+cd gantchart_generator
+
+# Install dependencies (one-time setup)
+pip install -r requirements.txt
+
+# Generate the chart
+python gantt_chart_original.py
+```
+
+### Output & Export Options
+1. **gantt_chart_final.html** - Opens automatically in your browser
+2. **PDF Export**: Click the "Export PDF" button in the HTML page
+3. **Browser Print**: Use Print > Save as PDF from your browser
+4. **Screenshot**: Capture the chart directly from browser
+
+### Timeline Data (From DriverPass Interview)
+- **Requirements Collection**: Jan 22 - Feb 4 (14 days) ✅ Complete
+- **Design Tasks**: Feb 11 - Mar 11 (Use Cases, Activity Diagrams, UI Research, Class Diagrams)
+- **Customer Approval**: Mar 10-11 (Milestone)
+- **Development Phase**: Mar 12 - May 8 (Interface, Database, Business Logic)
+- **Final Delivery**: May 9 - May 12 (System Delivery & Sign-off)
+
+### File Structure
+```
+gantchart_generator/
+├── gantt_chart_original.py  # Main generator script
+├── requirements.txt         # Python dependencies (plotly, pandas)
+└── gantt_chart_final.html  # Generated output (created when run)
+```
+
+### Customization
+To modify the timeline, edit the `data` array in `gantt_chart_original.py`:
+```python
+data = [
+    {"Task": "Your Task", "Start": "2025-01-01", "End": "2025-01-15", "Phase": "Planning", "Progress": 0},
+    # Add more tasks...
+]
+```
+
+### Troubleshooting
+- **Dependencies**: Ensure plotly and pandas are installed
+- **Browser Issues**: Try a different browser if charts don't display
+- **File Location**: Charts are always saved in the gantchart_generator directory
+
+---
+
+## 14. Future Enhancements
 
 1. **Mobile Applications**: Native iOS/Android apps
 2. **AI Features**: Predictive scheduling, personalized study plans

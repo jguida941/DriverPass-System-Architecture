@@ -4,3 +4,9 @@ Ideas.md
 *.swp
 *.tmp
 ~*
+# Generated gantt chart files
+gantt_chart_final.html
+gantt_chart_for_pdf.png
+# Keep them only in gantchart_generator directory
+!gantchart_generator/gantt_chart_final.html
+!gantchart_generator/gantt_chart_for_pdf.png
