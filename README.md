@@ -53,6 +53,7 @@ DriverPass is a cloud-native platform addressing the critical 65% DMV test failu
 CS-255-Project-One/
 ├── README.md                    # This comprehensive guide
 ├── LICENSE                      # MIT License
+├── requirements.txt             # Python dependencies for entire project
 ├── .gitignore                   # Excludes CLAUDE.md, Ideas.md, generated files
 ├── business_requirements.md     # Technical specifications (architect version)
 ├── model_application_short_paper.md # Modeling analysis (architect version)
@@ -69,7 +70,6 @@ CS-255-Project-One/
 │
 ├── gantchart_generator/         # Gantt chart visualization tool
 │   ├── gantt_chart_original.py  # Python script for generating timeline
-│   ├── requirements.txt         # Python dependencies
 │   └── gantt_chart_final.html  # Interactive HTML output with PDF export
 │
 └── submission/                  # Final deliverables
@@ -446,11 +446,11 @@ The `gantchart_generator` directory contains a Python-based tool for creating pr
 
 ### Quick Start
 ```bash
+# Install dependencies (one-time setup, from project root)
+pip install -r requirements.txt
+
 # Navigate to generator directory
 cd gantchart_generator
-
-# Install dependencies (one-time setup)
-pip install -r requirements.txt
 
 # Generate the chart
 python gantt_chart_original.py
@@ -471,10 +471,11 @@ python gantt_chart_original.py
 
 ### File Structure
 ```
-gantchart_generator/
-├── gantt_chart_original.py  # Main generator script
+CS-255-Project-One/
 ├── requirements.txt         # Python dependencies (plotly, pandas)
-└── gantt_chart_final.html  # Generated output (created when run)
+└── gantchart_generator/
+    ├── gantt_chart_original.py  # Main generator script
+    └── gantt_chart_final.html  # Generated output (created when run)
 ```
 
 ### Customization
