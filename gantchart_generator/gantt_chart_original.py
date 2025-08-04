@@ -5,19 +5,20 @@ import webbrowser
 import os
 
 # ===== DATA DEFINITION SECTION =====
-# Based on DriverPass interview transcript schedule
+# EXACT data from Jennifer's table in the DriverPass interview transcript
 data = [
-    {"Task": "Requirements Collection", "Start": "2025-01-22", "End": "2025-02-04", "Phase": "Planning", "Progress": 100},
-    {"Task": "Use Case Diagrams", "Start": "2025-02-11", "End": "2025-02-21", "Phase": "Design", "Progress": 0},
-    {"Task": "Activity Diagrams", "Start": "2025-02-11", "End": "2025-02-21", "Phase": "Design", "Progress": 0},
-    {"Task": "UI/UX Research", "Start": "2025-02-11", "End": "2025-02-22", "Phase": "Design", "Progress": 0},
-    {"Task": "Class Diagram", "Start": "2025-03-01", "End": "2025-03-11", "Phase": "Design", "Progress": 0},
-    {"Task": "Customer Meeting", "Start": "2025-03-10", "End": "2025-03-11", "Phase": "Approval", "Progress": 0},
-    {"Task": "Build Interface", "Start": "2025-03-12", "End": "2025-03-27", "Phase": "Development", "Progress": 0},
-    {"Task": "Database Tables & Linking", "Start": "2025-03-28", "End": "2025-04-09", "Phase": "Development", "Progress": 0},
-    {"Task": "Business Logic Layer", "Start": "2025-04-10", "End": "2025-05-08", "Phase": "Development", "Progress": 0},
-    {"Task": "System Delivery", "Start": "2025-05-09", "End": "2025-05-10", "Phase": "Deployment", "Progress": 0},
-    {"Task": "Sign-off Meeting", "Start": "2025-05-11", "End": "2025-05-12", "Phase": "Deployment", "Progress": 0},
+    {"Task": "Collect Requirements", "Start": "2025-01-22", "End": "2025-02-04", "Phase": "Planning", "Progress": 100},
+    {"Task": "Create Use Case Diagrams", "Start": "2025-02-11", "End": "2025-02-18", "Phase": "Design", "Progress": 0},
+    {"Task": "Build Activity Diagrams for Each Use Case", "Start": "2025-02-15", "End": "2025-03-09", "Phase": "Design", "Progress": 0},
+    {"Task": "Research User Interface Designs", "Start": "2025-02-27", "End": "2025-03-07", "Phase": "Design", "Progress": 0},
+    {"Task": "Build Class Diagram", "Start": "2025-03-01", "End": "2025-03-09", "Phase": "Design", "Progress": 0},
+    {"Task": "Get Customer Approval", "Start": "2025-03-10", "End": "2025-03-11", "Phase": "Approval", "Progress": 0},
+    {"Task": "Build Interface", "Start": "2025-03-12", "End": "2025-03-24", "Phase": "Development", "Progress": 0},
+    {"Task": "Link DB to Interface", "Start": "2025-03-24", "End": "2025-04-03", "Phase": "Development", "Progress": 0},
+    {"Task": "Build Business Logic", "Start": "2025-04-05", "End": "2025-04-27", "Phase": "Development", "Progress": 0},
+    {"Task": "Test System", "Start": "2025-04-27", "End": "2025-05-07", "Phase": "Testing", "Progress": 0},
+    {"Task": "Deliver System", "Start": "2025-05-08", "End": "2025-05-09", "Phase": "Deployment", "Progress": 0},
+    {"Task": "Sign-off Meeting", "Start": "2025-05-09", "End": "2025-05-10", "Phase": "Deployment", "Progress": 0},
 ]
 
 # ===== DATA PREPROCESSING SECTION =====
@@ -50,26 +51,21 @@ df['Color'] = df['Phase'].map(phase_colors)
 
 # ===== GANTT CHART CREATION =====
 fig = px.timeline(
-    df,
-    x_start="Start",
-    x_end="End",
-    y="Task",
+    df, 
+    x_start="Start", 
+    x_end="End", 
+    y="Task", 
     color="Phase",
     color_discrete_map=phase_colors,
-    title="DriverPass Project Timeline - CS 255",
-    hover_data={"Start": False, "End": False, "Phase": False, "Task": False},
-    labels={"Phase": "Project Phase"},
-    template="plotly_white"
+    title="DriverPass Project Timeline - CS 255"
 )
 
 fig.update_yaxes(autorange="reversed")
-
-# Update hover to use custom text
 fig.update_traces(
     marker_line_color='black',
     marker_line_width=1.5,
-    hovertemplate='%{customdata}<extra></extra>',
-    customdata=df['Hover_Text']
+    hovertemplate='<b>%{y}</b><br>Phase: %{fullData.name}<br>Start: %{base|%B %d, %Y}<br>End: %{x|%B %d, %Y}<br>Duration: %{customdata[0]} days<br>Progress: %{customdata[1]}%<extra></extra>',
+    customdata=df[['Duration', 'Progress']].values
 )
 
 # ===== LAYOUT FOR BETTER PDF EXPORT =====
