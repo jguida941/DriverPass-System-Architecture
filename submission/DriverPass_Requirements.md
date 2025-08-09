@@ -173,4 +173,4 @@ DriverPass needs a web platform that fixes the 65% DMV failure rate. Students fa
 
 *Architected following dispatch-layer patterns proven in SmartAuto and similar high-throughput booking systems. All writes are atomic, all reads are cached, all operations are traceable.*
 
-**Authored by Justin**
+**Architect: Justin Paul Guida**
