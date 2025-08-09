@@ -58,19 +58,11 @@ CS-255-Project-One/
 ├── business_requirements.md     # Technical specifications (architect version)
 ├── model_application_short_paper.md # Modeling analysis (architect version)
 │
-├── course_documents/            # Original assignment materials
-│   ├── CS 255 Business Requirements Document Template.md
-│   ├── CS 255 DriverPass Interview Transcript.md
-│   ├── CS 255 Model Application Short Paper Template.md
-│   └── Project One Guidelines and Rubric.html
 │
 ├── docs/                        # Extended academic versions
 │   ├── DriverPass_Business_Requirements.docx.md    # Student-friendly expanded version
 │   └── DriverPass_Model_Application_Short_Paper.docx.md # Academic paper format
 │
-├── gantchart_generator/         # Gantt chart visualization tool
-│   ├── gantt_chart_original.py  # Python script for generating timeline
-│   └── gantt_chart_final.html  # Interactive HTML output with PDF export
 │
 ├── images/                      # Screenshots and visual assets
 │   ├── gantt-timeline.png       # Gantt chart timeline view
