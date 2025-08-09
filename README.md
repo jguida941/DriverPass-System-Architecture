@@ -430,7 +430,7 @@ Role Hierarchy:
 
 ---
 
-## 13. Gantt Chart Generator
+## 13. Gantt Chart Generator: Note this is not included in public version, contact me if interested!
 
 ### Overview
 The `gantchart_generator` directory contains a Python-based tool for creating professional project timeline visualizations based on the DriverPass interview transcript schedule.
