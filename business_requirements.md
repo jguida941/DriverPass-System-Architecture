@@ -1,5 +1,5 @@
 # DriverPass Business Requirements Document
-*System Architecture by Justin*
+*System Architecture by Justin Paul Guida*
 
 **Design Philosophy**: This architecture applies proven patterns from production systems - caching for performance, dispatch layers for routing, and atomic operations for data integrity.
 
