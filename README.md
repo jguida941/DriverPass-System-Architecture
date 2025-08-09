@@ -534,8 +534,7 @@ The architecture supports 1M+ daily transactions while maintaining sub-100ms res
 [`system-architecture`](https://github.com/topics/system-architecture) [`jwt-auth`](https://github.com/topics/jwt-auth) [`postgresql`](https://github.com/topics/postgresql) [`redis`](https://github.com/topics/redis) [`microservices`](https://github.com/topics/microservices) [`dmv-scheduling`](https://github.com/topics/dmv-scheduling) [`cs255`](https://github.com/topics/cs255) [`cloud-native`](https://github.com/topics/cloud-native) [`docker`](https://github.com/topics/docker) [`kubernetes`](https://github.com/topics/kubernetes)
 
 ### License
-This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License - see the LICENSE file for details. This prevents commercial use while allowing academic and educational use.
-
+This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License, see the LICENSE file for details. 
 ---
 
 **© 2025 Justin Paul Guida - System Architecture**
